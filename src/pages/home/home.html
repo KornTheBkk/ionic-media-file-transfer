@@ -7,7 +7,9 @@
 </ion-header>
 
 <ion-content padding>
-  
+  <p>Download Progress : {{ loadedProgress }}%</p>
+
   <button ion-button full (click)="downloadAndOpenSound()">Download Sound</button>
+  <button ion-button full (click)="play()" [disabled]="!fileReady">{{ actionText }}</button>
 
 </ion-content>

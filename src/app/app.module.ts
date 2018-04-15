@@ -10,6 +10,7 @@ import { HomePage } from '../pages/home/home';
 import { Media } from '@ionic-native/media';
 import { FileTransfer} from '@ionic-native/file-transfer';
 import { File } from '@ionic-native/file';
+import { BackgroundMode } from '@ionic-native/background-mode';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { File } from '@ionic-native/file';
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     Media,
     File,
-    FileTransfer
+    FileTransfer,
+    BackgroundMode
   ]
 })
 export class AppModule {}
